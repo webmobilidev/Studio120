@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.studio120.Studio120" version="1.2.19" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.studio120.Studio120" version="2.2.19" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Studio 120</name>
     <description>
 Questa applicazione ti permette di portare sempre con te, sul tuo Smartphone o Tablet, il catalogo di proposte di Studio 120, il tuo professionista  di fiducia per l’interior design a Piacenza.
@@ -13,11 +13,23 @@ Con la gallery guarda il prodotto d'arredo da te selezionato nei minimi dettagli
     <author email="info@centoventi.com" href="http://www.centoventi.com">
         Studio 120
     </author>
+    <gap:plugin name="com.sharinglabs.cordova.plugin.cache"  />
     <gap:plugin name="org.apache.cordova.device" />
 	<gap:plugin name="org.apache.cordova.network-information" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
+	<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.1.1"/>
+	<gap:plugin name="org.apache.cordova.core.vibration" />
+	<gap:plugin name="org.apache.cordova.core.dialogs" />
+	<gap:plugin name="org.apache.cordova.media" />
 	
-    <preference name="permissions" value="none" />
+	<feature name="PushPlugin">
+		<param name="ios-package" value="PushPlugin" />
+	</feature>
+	<feature name="Notification">
+		<param name="ios-package" value="CDVNotification" />
+	</feature>
+	
+	<preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="true" />
@@ -39,8 +51,7 @@ Con la gallery guarda il prodotto d'arredo da te selezionato nei minimi dettagli
 	<gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
 		<false/>
 	</gap:config-file>
-
-	    <icon src="icons.png" />
+    <icon src="icons.png" />
     <icon gap:density="ldpi" gap:platform="android" src="res/icons/android/icon-36-ldpi.png" />
     <icon gap:density="mdpi" gap:platform="android" src="res/icons/android/icon-48-mdpi.png" />
     <icon gap:density="hdpi" gap:platform="android" src="res/icons/android/icon-72-hdpi.png" />
@@ -76,6 +87,5 @@ Con la gallery guarda il prodotto d'arredo da te selezionato nei minimi dettagli
 	<gap:splash gap:platform="ios" width="1536" height="2008" src="res/screen/ios/screen-ipad-portrait-2x.png"  />
 	<gap:splash gap:platform="ios" width="2008" height="1536" src="res/screen/ios/screen-ipad-landscape-2x.png"  />	
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
-
     <access origin="*" />
 </widget>
