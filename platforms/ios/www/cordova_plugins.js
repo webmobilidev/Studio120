@@ -150,6 +150,20 @@ module.exports = [
         "merges": [
             "Contact"
         ]
+    },
+    {
+        "id": "es6-promise-plugin.Promise",
+        "file": "plugins/es6-promise-plugin/www/promise.js",
+        "pluginId": "es6-promise-plugin",
+        "runs": true
+    },
+    {
+        "id": "cordova-plugin-x-socialsharing.SocialSharing",
+        "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
+        "pluginId": "cordova-plugin-x-socialsharing",
+        "clobbers": [
+            "window.plugins.socialsharing"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -164,7 +178,9 @@ module.exports.metadata =
     "cordova-plugin-network-information": "1.2.1",
     "cordova-plugin-statusbar": "2.2.3",
     "cordova-plugin-compat": "1.1.0",
-    "cordova-plugin-contacts": "2.3.1"
+    "cordova-plugin-contacts": "2.3.1",
+    "es6-promise-plugin": "4.1.0",
+    "cordova-plugin-x-socialsharing": "5.1.8"
 };
 // BOTTOM OF METADATA
 });

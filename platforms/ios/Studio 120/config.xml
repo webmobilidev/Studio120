@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.designbest.studio120" version="5.0.19" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.designbest.studio120" version="6.0.19" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
@@ -14,28 +14,6 @@
     <feature name="GestureHandler">
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
-    </feature>
-    <feature name="PushNotification">
-        <param name="ios-package" value="PushPlugin" />
-    </feature>
-    <feature name="Device">
-        <param name="ios-package" value="CDVDevice" />
-    </feature>
-    <feature name="Notification">
-        <param name="ios-package" value="CDVNotification" />
-    </feature>
-    <feature name="InAppBrowser">
-        <param name="ios-package" value="CDVInAppBrowser" />
-    </feature>
-    <feature name="NetworkStatus">
-        <param name="ios-package" value="CDVConnection" />
-    </feature>
-    <feature name="StatusBar">
-        <param name="ios-package" value="CDVStatusBar" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="Contacts">
-        <param name="ios-package" value="CDVContacts" />
     </feature>
     <name>Studio 120</name>
     <description>
@@ -64,6 +42,11 @@ Con la gallery guarda il prodotto d'arredo da te selezionato nei minimi dettagli
     </config-file>
     <config-file parent="UIViewControllerBasedStatusBarAppearance" platform="ios" target="*-Info.plist">
         <false />
+    </config-file>
+    <config-file parent="LSApplicationQueriesSchemes" platform="ios" target="*-Info.plist">
+        <array>
+            <string>whatsapp://</string>
+        </array>
     </config-file>
     <icon height="29" platform="ios" src="www/res/icons/ios/icon-small.png" width="29" />
     <icon height="58" platform="ios" src="www/res/icons/ios/icon-small-2x.png" width="58" />
@@ -107,10 +90,37 @@ Con la gallery guarda il prodotto d'arredo da te selezionato nei minimi dettagli
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
-    <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
     <preference name="android-minSdkVersion" value="19" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarStyle" value="lightcontent" />
+    <feature name="PushNotification">
+        <param name="ios-package" value="PushPlugin" />
+    </feature>
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
+    </feature>
+    <feature name="Notification">
+        <param name="ios-package" value="CDVNotification" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="ios-package" value="CDVConnection" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <feature name="Contacts">
+        <param name="ios-package" value="CDVContacts" />
+    </feature>
+    <feature name="SocialSharing">
+        <param name="ios-package" value="SocialSharing" />
+        <param name="onload" value="true" />
+    </feature>
 </widget>

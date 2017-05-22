@@ -35,10 +35,16 @@
         "cordova-plugin-contacts": {
             "CONTACTS_USAGE_DESCRIPTION": " ",
             "PACKAGE_NAME": "com.designbest.studio120"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.designbest.studio120"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.designbest.studio120"
+        },
+        "es6-promise-plugin": {
             "PACKAGE_NAME": "com.designbest.studio120"
         }
     }
