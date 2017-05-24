@@ -15,6 +15,32 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="PushNotification">
+        <param name="ios-package" value="PushPlugin" />
+    </feature>
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
+    </feature>
+    <feature name="Notification">
+        <param name="ios-package" value="CDVNotification" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="ios-package" value="CDVConnection" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Contacts">
+        <param name="ios-package" value="CDVContacts" />
+    </feature>
+    <feature name="SocialSharing">
+        <param name="ios-package" value="SocialSharing" />
+        <param name="onload" value="true" />
+    </feature>
     <name>Studio 120</name>
     <description>
 Questa applicazione ti permette di portare sempre con te, sul tuo Smartphone o Tablet, il catalogo di proposte di Studio 120, il tuo professionista  di fiducia per l’interior design a Piacenza.
@@ -90,37 +116,10 @@ Con la gallery guarda il prodotto d'arredo da te selezionato nei minimi dettagli
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
     <preference name="android-minSdkVersion" value="19" />
-    <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarStyle" value="lightcontent" />
-    <feature name="PushNotification">
-        <param name="ios-package" value="PushPlugin" />
-    </feature>
-    <feature name="Device">
-        <param name="ios-package" value="CDVDevice" />
-    </feature>
-    <feature name="Notification">
-        <param name="ios-package" value="CDVNotification" />
-    </feature>
-    <feature name="InAppBrowser">
-        <param name="ios-package" value="CDVInAppBrowser" />
-    </feature>
-    <feature name="NetworkStatus">
-        <param name="ios-package" value="CDVConnection" />
-    </feature>
-    <feature name="StatusBar">
-        <param name="ios-package" value="CDVStatusBar" />
-        <param name="onload" value="true" />
-    </feature>
-    <preference name="StatusBarOverlaysWebView" value="true" />
-    <feature name="Contacts">
-        <param name="ios-package" value="CDVContacts" />
-    </feature>
-    <feature name="SocialSharing">
-        <param name="ios-package" value="SocialSharing" />
-        <param name="onload" value="true" />
-    </feature>
 </widget>

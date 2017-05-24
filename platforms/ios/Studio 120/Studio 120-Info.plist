@@ -62,6 +62,6 @@
     <key>IS_GCM_ENABLED</key>
     <true/>
     <key>NSContactsUsageDescription</key>
-    <string></string>
+    <string/>
   </dict>
 </plist>
